@@ -23,7 +23,6 @@ public class RootController {
 	@RequestMapping(value="/PageNotFound")
 	public ModelAndView pageNotFound(Map<String, Object> model){
 		logger.info("RootController PageNotFound");
-//		model.put("info", "testPage");
 		
 		return new ModelAndView("pageNotFound",model);
 	}
@@ -32,7 +31,7 @@ public class RootController {
 	public ModelAndView testPage(Map<String, Object> model){
 		logger.info("RootController testPage");
 		model.put("info", "testPage");
-
+		
 		return new ModelAndView("testPage",model);
 	}
 	
@@ -50,7 +49,6 @@ public class RootController {
 		model.put("info", "testPageOne");
 
 		throw new RuntimeException("sfesf");
-//		return new ModelAndView("testPage",model);
 	}
 	
 }
