@@ -8,7 +8,7 @@
 	<definition name="template-base" template="/layouts/base.jsp" />
 	<!-- <definition name="content-base" template="/layouts/main.jsp" /> -->
 	
-	<definition name="testPage" extends="template-base">
+	<definition name="responsePage" extends="template-base">
 		<put-attribute name="content" value="/layouts/content.jsp" />
 	</definition>
 	

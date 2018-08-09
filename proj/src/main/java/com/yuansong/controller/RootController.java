@@ -32,7 +32,7 @@ public class RootController {
 		logger.info("RootController testPage");
 		model.put("info", "testPage");
 		
-		return new ModelAndView("testPage",model);
+		return new ModelAndView("responsePage",model);
 	}
 	
 	@RequestMapping(value="/testPageOne")
@@ -40,7 +40,7 @@ public class RootController {
 		logger.info("RootController testPageOne");
 		model.put("info", "testPageOne");
 
-		return new ModelAndView("testPage",model);
+		return new ModelAndView("responsePage",model);
 	}
 	
 	@RequestMapping(value="/testErrorPage")
@@ -48,7 +48,7 @@ public class RootController {
 		logger.info("RootController testErrorPage");
 		model.put("info", "testPageOne");
 
-		throw new RuntimeException("sfesf");
+		throw new RuntimeException("testErrorPage");
 	}
 	
 }
